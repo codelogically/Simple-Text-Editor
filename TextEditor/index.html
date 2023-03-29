@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesomr CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="editor-container">
+        <div class="heading">
+          <h2>Text Editor <i class="fa-solid fa-file-lines"></i></h2>
+        </div>
+        <div class="header">
+          <div class="font-style">
+            <ul>
+              <li id="increment">
+                <input type="number" value="14" name="increment" id="fontSize" />
+              </li>
+              <li id="bold"><i class="fa-solid fa-bold"></i></li>
+              <li id="italic"><i class="fa-solid fa-italic"></i></li>
+              <li id="underline"><i class="fa-solid fa-underline"></i></li>
+              <li id="alignLeft"><i class="fa-solid fa-align-left"></i></li>
+              <li id="alignCenter"><i class="fa-solid fa-align-center"></i></li>
+              <li id="alignRight"><i class="fa-solid fa-align-right"></i></li>
+              <li id="alignJustify"><i class="fa-solid fa-align-justify"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="textArea">
+          <textarea
+            name="text-area"
+            id="textArea"
+            cols="140"
+            rows="20"
+          ></textarea>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
